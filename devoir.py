@@ -89,8 +89,10 @@ if __name__ == "__main__":
     list_collections("testDB")
     list_databases()
     
-    student_data = {"nom": "Ali", "prenom": "Mehdi", "age": 22, "filiere": "Informatique"}
-    add_document("testDB", "students", student_data)
+    student_data1 = {"nom": "Ali", "prenom": "Mehdi", "age": 22, "filiere": "Informatique"}
+    student_data2 = {"nom": "Fikhane", "prenom": "Nizar", "age": 18, "filiere": "Informatique"}
+    add_document("testDB", "students", student_data1)
+    add_document("testDB", "students", student_data2)
     
     list_documents("testDB", "students")
     
