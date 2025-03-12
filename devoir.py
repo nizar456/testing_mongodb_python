@@ -84,11 +84,11 @@ if __name__ == "__main__":
     # Tests
     list_databases()
     create_database("testDB")
-    list_databases()
     list_collections("testDB")
     create_collection("testDB", "students")
     list_collections("testDB")
-
+    list_databases()
+    
     student_data = {"nom": "Ali", "prenom": "Mehdi", "age": 22, "filiere": "Informatique"}
     add_document("testDB", "students", student_data)
     
@@ -102,6 +102,7 @@ if __name__ == "__main__":
     delete_document("testDB", "students", {"nom": "Ali"})
     list_documents("testDB", "students")
 
-    delete_collection("testDB", "students")
-    delete_database("testDB")
+    #delete_collection("testDB", "students")
+    #list_collections("testDB")
+    #delete_database("testDB")
     list_databases()
